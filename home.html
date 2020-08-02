@@ -1,56 +1,101 @@
-<html>
-    <body>
-        <center><h1>File Managemet System</h1></center>
-        <header>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Management System</title>
+ 
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/card.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+</head>
 
-</header>
+<body>
+  <section id="container">
+   
+       <header class="header black-bg">
+         <a class="logo"><b><span>FILE MANAGEMET SYSTEM</span></b></a>
+           
+    </header>
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+         <h1 class="centered">Welcome !! Krishna</h1>
+          <li class="mt">
+            <a class="active" href="home.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+          <li>
+            <a href="sharedfiles.html">
+              <i class="fa fa-envelope"></i>
+              <span>Shared Files</span>
+              </a>
+          </li>
+          <li>
+            <a href="fileupload.html">
+              <i class="fa fa-map-marker"></i>
+              <span>Upload File</span>
+              </a>
+          </li>
+          
+          <li>
+            <a href="aboutus.html">
+              <i class="fa fa-map-marker"></i>
+              <span>About Us</span>
+              </a>
+          </li>
+          
+          <li>
+            <a href="login.html">
+              <i class="fa fa-map-marker"></i>
+              <span>Logout</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    
+   ]
+    <article>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="home.html">Your Files</a></li>
-      <li><a href="sharedfiles.html">Shared Files</a></li>
-      <li><a href="hddenfiles.html">Hidden Files</a></li>
-      <li><a href="aboutus.html">About US</a></li>
-      <li><a href="profle.html">My Profile</a></li>
-    </ul>
-  </nav>
+      <h2>Uploaded Files</h2>
 
-  <article>
-<form action="fileupload.html" method="post">
-    <p>Here it is the list of the uploaded</p>
-    <table align="center">
-        <tr>
-            <td>
-                <img src="images/pdf.png" style="width:100px;height100px;"></img>
-            </td>
-            <td></td>
-            <td>
-                <img src="images/zip.png" style="width:120px;height120px;"></img>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>File 1</p>
-            </td>
-            <td></td>
-            <td>
-                <p>File 2</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" name="upoad" value="Upload File">
-            </td>
-        </tr>
-    </table>
-</form>
-  </article>
-</section>
+      <div class="container">
+        <div class="card">
+          <h3>Uploaded File1.pdf</h3>
+          <img src="images/icons8-pdf-96.png" ></img>
+            <div class="actions">
+            <button class="actions__like">Download &nbsp; <i class="fas fa-heart"></i> </button>
+            <button class="actions__trade">faourite &nbsp; <i class="fas fa-exchange-alt"></i> </button>
+            <button class="actions__cancel">Delete &nbsp; <i class="fas fa-times"></i> </button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Uploaded File2.zip</h3>
+          <img src="images/icons8-zip-96.png" ></img>
+            <div class="actions">
+            <button class="actions__like">Download &nbsp; <i class="fas fa-heart"></i> </button>
+            <button class="actions__trade">Favourite &nbsp; <i class="fas fa-exchange-alt"></i> </button>
+            <button class="actions__cancel">Delete &nbsp; <i class="fas fa-times"></i> </button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Uploaded File3.png</h3>
+          <img src="images/icons8-png-96.png" ></img>
+            <div class="actions">
+            <button class="actions__like">Download &nbsp; <i class="fas fa-heart"></i> </button>
+            <button class="actions__trade">Favourite &nbsp; <i class="fas fa-exchange-alt"></i> </button>
+            <button class="actions__cancel">Delete &nbsp; <i class="fas fa-times"></i> </button>
+          </div>
+        </div>
+        </div>
+    </article>
+  
 
-<footer>
-  <p>Footer</p>
-</footer>
-    </body>
-</html>
+  

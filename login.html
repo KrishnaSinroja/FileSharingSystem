@@ -1,29 +1,45 @@
-<body>
-    <center> <h1> User Login</h1> </center>
-    <form method="post" actionn="home.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-        <fieldset>
-        <legend>Login Details</legend>
-        <table align="center">
-            <tr>
-                <td><label>Email : </label></td>
-                <td><input type="email" placeholder="Enter Email" name="email" required></td>
-            <tr>
-                <td><label>Password : </label></td>
-                <td><input type="password" placeholder="Enter Password" name="password" required></td>
-            <tr>
-            <tr>
-                <td>Not user? <a href="index.html"> SignIn</a></td>
-                <td>Forgot <a href="#"> password? </a></td>
-            <tr>
-            <tr>
-                <td><button type="submit">Login</button></td>
-                <td><button type="button" class="cancelbtn"> Cancel</button></td>
-            <tr>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/sigup.css">
+</head>
+<body class="align">
 
-        </table>
-         </fieldset>
-    </form>
+  <div class="grid align__item">
+
+    <div class="register">
+
+      <img src="images/icons8-lock-48.png">
+      <h2>Login</h2>
+
+      <form action="home.html"class="form">
+
+        <div class="form__field">
+          <input type="email" placeholder="Email">
+        </div>
+
+        <div class="form__field">
+          <input type="password" placeholder="Password">
+        </div>
+
+        <div class="form__field">
+          <a href="home.html"><input type="submit" value="Login"></a>
+        </div>
+
+      </form>
+
+      <p>Dont't have an accout? <a href="index.html">Signup</a></p>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
+
 

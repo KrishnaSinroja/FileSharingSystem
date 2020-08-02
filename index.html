@@ -1,42 +1,55 @@
-<html>
-<body>
-    <center> <h1> User Signup</h1> </center>
-    <form method="post" actionn="home.html">
 
-        <fieldset>
-        <legend>SignUp Details</legend>
-        <table align="center">
-            <tr>
-                <td><label>Full Name : </label></td>
-                <td><input type="text" placeholder="Enter Full Name" name="name" required></td>
-            </tr>
-            <tr>
-                <td><label>Contact No : </label></td>
-                <td><input type="tel" placeholder="Enter Cotact No" name="contact" required></td>
-            </tr>
-            <tr>
-                <td><label>Email : </label></td>
-                <td><input type="email" placeholder="Enter Email" name="email" required></td>
-            <tr>
-                <td><label>Password : </label></td>
-                <td><input type="password" placeholder="Enter Password" name="password" required></td>
-            <tr>
-                <td><label>Re-Password : </label></td>
-                <td><input type="password" placeholder="Enter Again Password" name="repassword" required></td>
-            <tr>
-            <tr>
-                <td>Alredy user? <a href="login.html"> Login</a></td>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-            <tr>
-            <tr>
-                <td><button type="submit">Sigup</button></td>
-                <td><button type="button" class="cancelbtn"> Cancel</button></td>
-            <tr>
+  <meta charset="UTF-8">
+  <title>SignUp</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/sigup.css">
+</head>
+<body class="align">
 
-        </table>
-         </fieldset>
-    </form>
+  <div class="grid align__item">
+
+    <div class="register">
+
+      <img src="images/icons8-registration-48.png">
+      <h2>Sign Up</h2>
+
+      <form action="home.html" class="form">
+
+        <div class="form__field">
+          <input type="email" placeholder="Email">
+        </div>
+
+        <div class="form__field">
+          <input type="tel" placeholder="Contact No." pattern="[0-9]{10}">
+        </div>
+
+        <div class="form__field">
+          <input type="password" placeholder="Password">
+        </div>
+
+        <div class="form__field">
+          <input type="password" placeholder="Re-Password">
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Sign Up">
+        </div>
+
+      </form>
+
+      <p>Already have an accout? <a href="login.html">Log in</a></p>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
+
 
 

@@ -1,31 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Management System</title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/card.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/uploadfile.css">
+
+</head>
+
 <body>
-    <center> <h1> Upload File</h1> </center>
-    <form method="post" actionn="home.html">
+  <section id="container">
+    <header class="header black-bg">
+      <a class="logo"><b><span>FILE MANAGEMET SYSTEM</span></b></a>
+      
+    </header>
+        <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+         <h1 class="centered">Welcome !! Krishna</h1>
+          <li class="mt">
+            <a  href="home.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+          <li>
+            <a href="sharedfiles.html">
+              <i class="fa fa-envelope"></i>
+              <span>Shared Files</span>
+              </a>
+          </li>
+          <li>
+            <a class="active" href="fileupload.html">
+              <i class="fa fa-map-marker"></i>
+              <span>Upload File</span>
+              </a>
+          </li>
+          
+          <li>
+            <a href="aboutus.html">
+              <i class="fa fa-map-marker"></i>
+              <span>About Us</span>
+              </a>
+          </li>
+          
+          <li>
+            <a href="login.html">
+              <i class="fa fa-map-marker"></i>
+              <span>Logout</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    
+    
+    <article>
 
-        <fieldset>
-        <legend>File Upload Details</legend>
-        <table align="center">
-            <tr>
-                <td><label>File : </label></td>
-                <td><input type="file" placeholder="Enter Full Name" name="file" required></td>
-            </tr>
-            <tr>
-                <td><label>Date : </label></td>
-                <td><input type="date" placeholder="Enter Cotact No" name="date" required></td>
-            </tr>
+      <h2>Upload File</h2>
 
-
-            <tr>
-                <td><button type="submit">upload</button></td>
-
-            <tr>
-
-        </table>
-         </fieldset>
-    </form>
-</body>
-</html>
+      <div class="container">
+        <form method="post" class="file-uploader" action="" enctype="multipart/form-data">
+            <div class="file-uploader__message-area">
+              <p>SELECT FILE TO UPLOAD</p>
+            </div>
+            <div class="file-chooser">
+              <input class="file-chooser__input" type="file">
+            </div>
+            <input class="file-uploader__submit-button" type="submit" value="Upload">
+          </form>        
+        </div>
+    </article>
 
 
