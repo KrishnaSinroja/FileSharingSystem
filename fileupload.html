@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>File Management System</title>
-
+  <!--CSS Links-->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/card.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/uploadfile.css">
-
+  <!--JS Links-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/uploadfile.js"></script>
 </head>
 
 <body>
@@ -70,15 +72,15 @@
 
       <div class="container">
         <form method="post" class="file-uploader" action="" enctype="multipart/form-data">
-            <div class="file-uploader__message-area">
-              <p>SELECT FILE TO UPLOAD</p>
-            </div>
-            <div class="file-chooser">
-              <input class="file-chooser__input" type="file">
-            </div>
-            <input class="file-uploader__submit-button" type="submit" value="Upload">
-          </form>        
+          <div class="file-uploader__message-area">
+            <p>Select a file to upload</p>
+          </div>
+          <div class="file-chooser">
+            <input class="file-chooser__input" type="file">
+          </div>
+          <input class="file-uploader__submit-button" type="submit" value="Upload">
+        </form>   
         </div>
     </article>
 
-
+    
