@@ -15,12 +15,12 @@
     
        $('.file-uploader__message-area p').text(options.MessageAreaText || settings.MessageAreaText);
       
-    \
+    
       var fileList = $('<ul class="file-list"></ul>');
       var hiddenInputs = $('<div class="hidden-inputs hidden"></div>');
       $('.file-uploader__message-area').after(fileList);
       $('.file-list').after(hiddenInputs);
-\
+
       $('.file-chooser__input').on('change', function(){
          var file = $('.file-chooser__input').val();
          var fileName = (file.match(/([^\\\/]+)$/)[0]);
