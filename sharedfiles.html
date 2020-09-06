@@ -10,21 +10,30 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/card.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
   <section id="container">
-    <header class="header black-bg">
-     
-      <a class="logo"><b><span>FILE MANAGEMET SYSTEM</span></b></a>
-       
-    </header>
+    <nav class="navbar  fixed-top  navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><b><span>FILE MANAGEMET SYSTEM</span></b></a> 
+      <ul class="nav justify-content-end">
+        <a href="login.html"><button type="button" class="btn btn-danger">Logout</button></a>
+      </ul> 
+    </nav>
        <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-         <h1 class="centered">Welcome !! Krishna</h1>
+         
           <li class="mt">
             <a href="home.html">
               <i class="fa fa-dashboard"></i>
@@ -51,12 +60,7 @@
               </a>
           </li>
           
-          <li>
-            <a href="login.html">
-              <i class="fa fa-map-marker"></i>
-              <span>Logout</span>
-              </a>
-          </li>
+         
         </ul>
         <!-- sidebar menu end-->
       </div>
@@ -69,7 +73,7 @@
 
       <div class="container">
         
-        <div class="card">
+        <!--<div class="card">
           <h3>Uploaded File2.zip</h3>
           <img src="images/icons8-zip-96.png" ></img>
             <div class="actions">
@@ -95,7 +99,58 @@
               <button class="actions__trade">faourite &nbsp; <i class="fas fa-exchange-alt"></i> </button>
               <button class="actions__cancel">Delete &nbsp; <i class="fas fa-times"></i> </button>
             </div>
-          </div>
+          </div>-->
+
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/icons8-pdf-96.png"style="width:20px, height:80px; class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shared File 1</h5>
+                  <a href="#" class="btn btn-sm btn-success btn-lg">Downlaod</a>
+                  <a href="#" class="btn btn-sm btn-primary btn-lg">Favourite</a>
+                  <a href="#" class="btn btn-sm btn-warning btn-lg">Share</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/icons8-pdf-96.png"style="width:20px, height:80px; class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shared File 2</h5>
+                  <a href="#" class="btn btn-sm btn-success btn-lg">Downlaod</a>
+                  <a href="#" class="btn btn-sm btn-primary btn-lg">Favourite</a>
+                  <a href="#" class="btn btn-sm btn-warning btn-lg">Share</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/icons8-pdf-96.png"style="width:20px, height:80px; class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shared File 3</h5>
+                  <a href="#" class="btn btn-sm btn-success btn-lg">Downlaod</a>
+                  <a href="#" class="btn btn-sm btn-primary btn-lg">Favourite</a>
+                  <a href="#" class="btn btn-sm btn-warning btn-lg">Share</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/icons8-pdf-96.png"style="width:20px, height:80px; class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shared File 4</h5>
+                  <a href="#" class="btn btn-sm btn-success btn-lg">Downlaod</a>
+                  <a href="#" class="btn btn-sm btn-primary btn-lg">Favourite</a>
+                  <a href="#" class="btn btn-sm btn-warning btn-lg">Share</a>
+                </div>
+              </div>
+            </div>
+            
+
         </div>
     </article>
   

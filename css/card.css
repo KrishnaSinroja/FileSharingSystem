@@ -37,46 +37,8 @@
  .card .desc {
 	 text-align: center;
 }
- .card .actions {
-	 width: 100%;
-	 display: grid;
-	 grid-template-columns: repeat(3, 1fr);
-}
- .card .actions button {
-	 margin-top: 40px;
-	 padding: 0.5rem 0.8rem;
-	 cursor: pointer;
-	 background-color: transparent;
-	 border: none;
-	 text-transform: uppercase;
-	 outline: 0;
-	 transition: background-color 0.4s, color 0.4s, transform 0.1s;
-}
- .card .actions button:hover {
-	 color: white;
-	 box-shadow: 0 0 24px rgba(0, 0, 0, .2);
-}
- .card .actions button:active {
-	 transform: scale(0.95);
-	 box-shadow: 0 0 16px rgba(0, 0, 0, .3);
-}
- .card .actions__like:hover {
-	 background-color: #00b16a;
-}
- .card .actions__trade:hover {
-	 background-color: #3498db;
-}
- .card .actions__cancel:hover {
-	 background-color: #c0392b;
-}
 
- a:link, a:visited {
-	 text-decoration: none;
-	 color: #2574a9;
-}
- .active {
-	 background-color: #00b16a;
-}
+
  button::-moz-focus-inner {
 	 border: 0;
 }
