@@ -132,4 +132,10 @@
 		 opacity: 1;
 	}
 }
- 
+.main-section{
+	border:1px solid #fff;
+	background-color: #fff;
+	width: 700px;
+	
+	}
+	
