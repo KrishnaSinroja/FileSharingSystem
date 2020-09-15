@@ -7,6 +7,40 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/sigup.css">
+
+  
+  <!--JQuery Links-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+  <script>
+    $(document).ready(function () {
+  $("#loginform").validate({
+    rules: {
+      email: {
+        required: true
+      },
+      password: {
+        required: true,
+        minlength:6,
+      }
+    },
+    messages: {
+      email: {
+        required: "Email is required"
+      },
+      password: {
+        required: "Password is required",
+        minlength:"Password must be of at least 6 characters"
+      }
+    },
+    submitHandler: function (form) { // for demo
+      document.location.href = "home.html";
+    }
+  });
+});
+  </script>
+
+
 </head>
 <body class="align">
 
@@ -17,14 +51,14 @@
       <img src="images/icons8-lock-48.png">
       <h2>Login</h2>
 
-      <form action="home.html"class="form">
+      <form action="home.html"class="form" id="loginform">
 
         <div class="form__field">
-          <input type="email" placeholder="Email">
+          <input type="email" placeholder="Email" name="email">
         </div>
 
         <div class="form__field">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" name="password">
         </div>
 
         <div class="form__field">
